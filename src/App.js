@@ -1,7 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./Footer";
+
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const test = null;
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +21,12 @@ function App() {
           Learn React
         </a>
       </header>
+
+      {["a", "b", "c"].map((value, index) => (
+        <p key={index}>{value}</p>
+      ))}
+
+      <Footer author="Álvaro Vázquez" />
     </div>
   );
 }
