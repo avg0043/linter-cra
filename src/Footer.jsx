@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Footer = ({ author, hey }) => {
+const Footer = ({ author }) => {
   return <footer>I'm the footer. Author: {author}</footer>;
 };
 
