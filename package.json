@@ -16,8 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint:eslint": "eslint --max-warnings=0 \"src/**/*.{js,jsx}\""
+    "test:lint:eslint": "eslint --max-warnings=0 \"src/**/*.{js,jsx}\"",
+    "test:lint:prettier": "prettylint \"src/**/*.{js,jsx}\""
   },
   "eslintConfig": {
     "extends": [
@@ -58,11 +58,14 @@
     ]
   },
   "devDependencies": {
-    "husky": "4"
+    "husky": "4",
+    "prettier": "^2.2.1",
+    "prettylint": "^1.0.0"
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn lint:eslint"
+      "pre-commit": "yarn test:lint:prettier",
+      "pre-push": "yarn test:lint:eslint"
     }
   }
 }

@@ -1,7 +1,7 @@
-import Footer from "./Footer";
+import Footer from './Footer'
 
-import logo from "./logo.svg";
-import "./App.css";
+import logo from './logo.svg'
+import './App.css'
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
 
       <Footer author="Álvaro Vázquez" />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

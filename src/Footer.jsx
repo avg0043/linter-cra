@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
 const Footer = ({ author }) => {
-  return <footer>I'm the footer. Author: {author}</footer>;
-};
+  return <footer>I'm the footer. Author: {author}</footer>
+}
 
 Footer.propTypes = {
   author: PropTypes.string.isRequired,
-};
+}
 
-export default Footer;
+export default Footer
