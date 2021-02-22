@@ -28,6 +28,18 @@
       "react/prop-types": [
         "warn"
       ],
+      "react/no-unused-prop-types": [
+        "warn"
+      ],
+      "react/no-unknown-property": [
+        "warn"
+      ],
+      "react/jsx-key": [
+        "warn",
+        {
+          "checkFragmentShorthand": true
+        }
+      ],
       "react/no-array-index-key": [
         "warn"
       ]
